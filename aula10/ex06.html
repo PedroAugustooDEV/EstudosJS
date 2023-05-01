@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
+    <style>
+        #area {
+            font: bolder 1.5em arial;
+            background-color: rgb(152, 63, 236);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="area">
+        aaaaah
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', Clicou)
+        a.addEventListener('mouseover', entrou)
+        a.addEventListener('mouseout', saiu)
+
+
+        function Clicar() {
+            a.innerText = "zé da mangaaa"
+        }
+
+        function entrou() {
+            a.innerText = "aaaaaaaaaah"
+            a.style.borderRadius = "30px" 
+        }
+
+        function saiu() {
+            a.innerText = "saiu"
+            a.style.borderRadius = "50px"
+        }
+    </script>
 </body>
 </html>
