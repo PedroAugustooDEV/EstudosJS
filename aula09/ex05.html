@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(28, 63, 167);
+            color: rgb(0, 0, 0);
+            font: normal 1em arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        aprendendo a manipular o DOM
+    </h1>
+    <p> 
+        aqui vai o resultado
+    </p>
+    <p>
+        Aprendendo a utilizar o <strong>DOM</strong> em JavaScript
+    </p>
+    <div id="msg">
+        clique em mim
+    </div>
+    <script>
+        var h1 = window.document.getElementsByTagName('p')[1]
+        
+        var m = window.document.querySelector('#msg')
+        m.innerHTML = 'AHHHHHH AAAAHH ZÉ DA MANGA'
+        m.style.backgroundColor = 'rgb(12, 9, 130)'
+        m.style.padding = '10px'
+        m.style.fontWeight = 'bolder'
+        m.style.color = 'white'
+
+
+
+        /*
+                    método por ID
+
+        var m = document.getElementById('msg')
+        
+        m.style.backgroundColor = 'rgb(12, 9, 58)'
+        m.style.padding = '10px'
+        m.style.fontWeight = 'bolder'
+        m.style.color = 'white'
+        m.innerText = 'AHHHHHH AAAAHH ZÉ DA MANGA'
+        */
+    </script>
+</body>
+</html>
